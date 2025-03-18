@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Call of the Ancients</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <video autoplay loop muted id="bgVideo">
+    <source src="./assets/pixel video.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+  <audio id="bgMusic" autoplay loop>
+    <source src="./assets/playful sparrow.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+  <button id="toggleMusic">
+    <img id="toggleMusicIcon" src="./assets/high-volume.png" alt="Sound Icon" />
+  </button>
+  <div class="container">
+    <h1>Call of the Ancients</h1>
+    <div class="story" id="storyText"></div>
+    <div class="choices" id="choicesContainer"></div>
+    <button class="reset-btn" id="resetBtn" style="display: none;">Restart</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
